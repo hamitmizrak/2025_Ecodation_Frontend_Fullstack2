@@ -42,6 +42,41 @@
     "strings": true
   },
 
+  // Prettier ayarları
+
+  // Kaydettiğinizde dosyayı otomatik olarak biçimlendirir
+  "editor.formatOnSave": true,
+
+  // Biçimlendirici olarak Prettier'ı kullan
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // HTML etiketlerinde tek tırnak (' ') kullan
+  "prettier.singleQuote": true,
+
+  // Her girinti için 2 boşluk kullan
+  "prettier.tabWidth": 2,
+
+  // Tab yerine boşluk kullan
+  "prettier.useTabs": false,
+
+  // HTML dosyalarında boşluk hassasiyetini azaltır (örneğin `<div>  </div>`)
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+
+  // Satır uzunluğu en fazla 100 karakter olsun
+  "prettier.printWidth": 100,
+
+  // Sonunda noktalı virgül eklensin mi? (JS/TS için)
+  "prettier.semi": true,
+
+  // Objelerde son elemandan sonra da virgül koyulsun mu? (JS/TS için)
+  "prettier.trailingComma": "es5",
+
+  // JSX (React) gibi yapılarda > işareti bir sonraki satıra alınsın mı?
+  "prettier.jsxBracketSameLine": false,
+
+  // Ok fonksiyonlarında parantez her zaman zorunlu mu? (JS için)
+  "prettier.arrowParens": "always",
+
   // HTML genişletmelerinde satır sonu otomatik ekler
   "emmet.variables": {
     "lang": "en",
