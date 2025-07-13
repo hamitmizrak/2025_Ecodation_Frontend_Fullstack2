@@ -75,6 +75,169 @@
 
 ---
 
+HTML’de liste türleri ikiye ayrılır:
+
+* **Düzenli liste (Ordered List)** → `<ol>`
+* **Düzensiz liste (Unordered List)** → `<ul>`
+
+Her birinin içinde listelenen öğeler `<li>` etiketiyle yazılır. Bu listelerin çeşitli **`attribute` (özellik)** değerleri vardır. Aşağıda her birini örneklerle ve açıklamalarıyla birlikte detaylı şekilde açıklıyorum.
+
+---
+
+## ✅ 1. DÜZENLİ LİSTE (Ordered List) – `<ol>`
+
+### Temel Kullanım:
+
+```html
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+```
+
+### 💡 Kullanılabilir `attribute`'lar:
+
+#### ✔️ `type`: Sıralama stilini belirler
+
+| Değer | Açıklama            | Görünüm    |
+| ----- | ------------------- | ---------- |
+| `1`   | Sayılar (default)   | 1, 2, 3    |
+| `A`   | Büyük harfler       | A, B, C    |
+| `a`   | Küçük harfler       | a, b, c    |
+| `I`   | Roma rakamı (büyük) | I, II, III |
+| `i`   | Roma rakamı (küçük) | i, ii, iii |
+
+**Örnek:**
+
+```html
+<ol type="A">
+  <li>Başlık</li>
+  <li>İçerik</li>
+</ol>
+```
+
+#### ✔️ `start`: Kaçtan başlayacağını belirler
+
+```html
+<ol type="1" start="5">
+  <li>Beşinci</li>
+  <li>Altıncı</li>
+</ol>
+```
+
+#### ✔️ `reversed`: Listeyi tersten yazdırır
+
+```html
+<ol reversed>
+  <li>Son</li>
+  <li>Ortada</li>
+  <li>İlk</li>
+</ol>
+```
+
+---
+
+## ✅ 2. DÜZENSİZ LİSTE (Unordered List) – `<ul>`
+
+### Temel Kullanım:
+
+```html
+<ul>
+  <li>Elma</li>
+  <li>Armut</li>
+  <li>Muz</li>
+</ul>
+```
+
+### 💡 Kullanılabilir `attribute`:
+
+#### ✔️ `type`: Madde işaretinin şeklini belirler
+
+(HTML5’te artık önerilmez, CSS ile yapılması daha doğrudur)
+
+| Değer    | Açıklama                   |
+| -------- | -------------------------- |
+| `disc`   | Dolu yuvarlak (varsayılan) |
+| `circle` | Boş yuvarlak               |
+| `square` | Kare kutu                  |
+
+**Örnek:**
+
+```html
+<ul type="square">
+  <li>Elma</li>
+  <li>Armut</li>
+</ul>
+```
+
+🟡 **Not:** HTML5’te `type` kullanımını doğrudan `ul` içinde kullanmak yerine CSS ile yapılması önerilir:
+
+```html
+<ul style="list-style-type: square;">
+  <li>Elma</li>
+  <li>Armut</li>
+</ul>
+```
+
+---
+
+## ✅ 3. Liste Öğesi (`<li>`) içinde `value` attribute (sadece `<ol>` için geçerli)
+
+```html
+<ol>
+  <li value="10">Onuncu</li>
+  <li>On birinci</li>
+</ol>
+```
+
+Bu durumda `li` 10’dan başlar, sonra sıradaki 11 olur.
+
+---
+
+## 📌 Tüm Liste Özelliklerinin Örnekli Kullanımı
+
+```html
+<h2>Düzenli Liste (start, type, reversed)</h2>
+<ol type="I" start="3" reversed>
+  <li>Üçüncü</li>
+  <li>İkinci</li>
+  <li>Birinci</li>
+</ol>
+
+<h2>Düzensiz Liste (type)</h2>
+<ul type="circle">
+  <li>Kedi</li>
+  <li>Köpek</li>
+  <li>Balık</li>
+</ul>
+
+<h2>Liste İçinde Değer Atama (value)</h2>
+<ol>
+  <li value="5">Beşinci</li>
+  <li>Altıncı</li>
+</ol>
+```
+
+---
+
+## 🎯 Liste Biçimlendirmede CSS ile Alternatif Özellikler
+
+```css
+ul {
+  list-style-type: square;   /* disc, circle, none */
+}
+
+ol {
+  list-style-type: upper-roman;  /* lower-alpha, decimal, etc. */
+}
+```
+
+
+
+
+
+
 ### 5. Tablo Yapısı
 
 ```html
