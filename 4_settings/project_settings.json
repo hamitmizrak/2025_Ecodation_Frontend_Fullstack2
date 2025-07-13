@@ -1,0 +1,103 @@
+{
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 18,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.mouseWheelZoom": true,
+
+  ////////////////////////////////////////////////////
+  // Fira Code
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  ////////////////////////////////////////////////////
+  // Emmet genişletmesini "Tab" tuşu ile etkinleştirir
+  "emmet.triggerExpansionOnTab": true,
+
+  // HTML ve CSS için otomatik kapanan etiketleri tamamlar
+  "emmet.syntaxProfiles": {
+    "html": {
+      "self_closing_tag": "xhtml"
+    }
+  },
+
+  // Boş öğelerde otomatik olarak boşluk bırakır
+  "emmet.preferences": {
+    "format.forceIndentationForEmmet": true,
+    //"format.noIndentTags": "html, body, head",
+    "format.selfClosingStyle": "xhtml" // <br />, <img />, vb.
+  },
+
+  // CSS için kısa yazımları destekler
+  "emmet.showAbbreviationSuggestions": true,
+
+  // HTML etiketleri için otomatik tamamlama önerileri verir
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+
+  // HTML genişletmelerinde satır sonu otomatik ekler
+  "emmet.variables": {
+    "lang": "en",
+    "charset": "UTF-8"
+  },
+
+  // Emmet ile genişletilmiş HTML kodlarını biçimlendirir
+  "editor.formatOnPaste": true,
+  // JSX / React gibi ortamlarda Emmet’in çalışmasını sağlar
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescriptreact": "html",
+    //"javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmPasteNative": false,
+  "RainbowBrackets.depreciation-notice": false,
+  "python.locator": "js",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontSize": 27,
+  "workbench.startupEditor": "none",
+  "git.openRepositoryInParentFolders": "always",
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.defaultFormatter": "GitHub.copilot",
+  "notebook.lineNumbers": "on",
+  "editor.scrollbar.horizontalScrollbarSize": 15,
+  "editor.overtypeCursorStyle": "line",
+  "diffEditor.maxFileSize": 120,
+  "debug.console.fontSize": 18,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Default Dark+"
+}
