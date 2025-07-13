@@ -1,1 +1,2 @@
 Otomatik yorumlama: Ctrl+K
+Kod düzenlemesi   : Shift+Alt+F
