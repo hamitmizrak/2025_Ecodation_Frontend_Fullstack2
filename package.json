@@ -1,0 +1,15 @@
+{
+  "name": "2025_ecodation_frontend_fullstack2",
+  "version": "1.0.0",
+  "description": "[GitHub Address](https://github.com/hamitmizrak/2025_Ecodation_Frontend_Fullstack2.git)\r ```sh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
