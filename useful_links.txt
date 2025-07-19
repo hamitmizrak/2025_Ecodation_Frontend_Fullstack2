@@ -1,5 +1,10 @@
 Çalışma
+HTML5
 https://www.w3schools.com/html/
+
+
+CSS3
+https://www.w3schools.com/Css/
 
 
 Telif Haksız Resimler
