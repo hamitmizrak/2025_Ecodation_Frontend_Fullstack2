@@ -24,23 +24,28 @@
 
     <!-- favicon -->
     <link rel="icon" href="../../pictures/main1.jpg" type="image/x-icon" />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- start code -->
 
-    <h1>Kayıt Ol (Register)</h1>
-    <fieldset>
+    <!-- <fieldset>
       <legend>Bilgilendirme</legend>
       <p>Bu form üzerinden üyelik oluşturabilir, verilerinizi güncelleyebilirsiniz.</p>
       <p>
-        Formu doldururken, gerekli alanları doldurduğunuzdan ve doğru bilgiler girdiğinizden emin
+        Formu doldururken,(*) gerekli alanları doldurduğunuzdan ve doğru bilgiler girdiğinizden emin
         olun. Yanlış veya eksik bilgiler, kayıt işleminin başarısız olmasına neden olabilir.
       </p>
+       </fieldset> -->
+
       <!-- Form -->
       <form action="/register/" method="post" id="register_form_id" autocomplete="on">
         <!-- Hidden -->
         <input type="hidden" name="form_version" value="v1.0.0" />
 
+        <h1>Kayıt Ol (Register)</h1>
         <!-- Zaman Damgası -->
         <!-- Kayıt aldığın tarihi backend diline göndermek için -->
         <!-- <input type="datetime-local" name="register_date_name" required /> -->
@@ -158,7 +163,7 @@
 
         <!-- ADDRESS -->
         <div class="form-group">
-          <label for="re_password_id">Address </label>
+          <label for="re_password_id">Address</label>
           <textarea
             id="address_id"
             name="address_name"
@@ -268,17 +273,8 @@
           <button type="submit" id="submit_id">Kayıt Ol</button>
         </div>
       </form>
-    </fieldset>
+   
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <!-- end code -->
   </body>
 </html>
