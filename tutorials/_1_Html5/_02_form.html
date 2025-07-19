@@ -29,7 +29,10 @@
     <!-- start code -->
 
     <h1>Kayıt Ol (Register)</h1>
-    <form action="/register/" method="get" id="register_form_id">
+    <form action="/register/" method="get" id="register_form_id" autocomplete="on">
+      <!-- Hidden -->
+      <input type="hidden" name="form_version" value="v1.0.0" />
+
       <!-- ADI -->
       <div class="form-group">
         <label for="name_id">Ad</label>
@@ -41,6 +44,8 @@
           required
           minlength="3"
           maxlength="50"
+          autocomplete="Hamit"
+          autofocus
         />
       </div>
 
@@ -105,7 +110,6 @@
         />
       </div>
 
-
       <!-- TEL NUMBER -->
       <div class="form-group">
         <label for="re_password_id">Tel Number</label>
@@ -120,6 +124,21 @@
           pattern="^\d{3} \d{3} \d{2} \d{2}$"
           title="Telefon numaranızı giriniz."
         />
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="form-group">
+        <label for="re_password_id">Address</label>
+        <textarea
+          id="address_id"
+          name="address_name"
+          placeholder="Adresinizi giriniz..."
+          required
+          minlength="3"
+          maxlength="200"
+          rows="3"
+          cols="28"
+        ></textarea>
       </div>
 
       <!-- BIRTHDAY-->
