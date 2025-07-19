@@ -1,0 +1,152 @@
+<!-- Html5 -->
+<!DOCTYPE html>
+
+<!-- bu sayfanın dili ingilizce olacak -->
+<html lang="en">
+  <head>
+    <!-- Türkçe karakterler için bu meta etiketi gereklidir -->
+    <meta charset="UTF-8" />
+    <!-- Responsive tasarım için bu meta etiketi gereklidir -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sayfanın açıklaması -->
+    <meta name="description" content="Html5,Cs33,Js,Bootstrap ile ilgili temel bilgiler" />
+
+    <!-- Sayfanın anahtar kelimeleri -->
+    <meta name="keywords" content="Html5, HTML,CSS3,JS,Bootstrap5 Web Geliştirme" />
+
+    <!-- Sayfanın yazar bilgisi -->
+    <meta name="author" content="MsC Computer Engineer Hamit Mızrak" />
+
+    <!-- Sayfanın başlığı -->
+    <title>Kayıt Ol (Register)</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="../../pictures/main1.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- start code -->
+
+    <h1>Kayıt Ol (Register)</h1>
+    <form action="/register/" method="get">
+      <!-- ADI -->
+      <div class="form-group">
+        <label for="name_id">Ad</label>
+        <input
+          type="text"
+          id="name_id"
+          name="name_id"
+          placeholder="Kullanıcı adı..."
+          required
+          minlength="3"
+          maxlength="50"
+        />
+      </div>
+
+      <!-- SOYADI -->
+      <div class="form-group">
+        <label for="surname_id">Soyad</label>
+        <input
+          type="text"
+          id="surname_id"
+          name="surname_id"
+          placeholder="Kullanıcı soyadı..."
+          required
+          minlength="3"
+          maxlength="50"
+        />
+      </div>
+
+      <!-- EPOSTA -->
+      <div class="form-group">
+        <label for="email_id">Mail</label>
+        <input
+          type="email"
+          id="email_id"
+          name="email_id"
+          placeholder="Emailiniz..."
+          required
+          minlength="3"
+          maxlength="50"
+          title="çalışan bir mail adresi giriniz..."
+        />
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="form-group">
+        <label for="password_id">Password</label>
+        <input
+          type="password"
+          id="password_id"
+          name="password_id"
+          placeholder="Şifreniz..."
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+          title="En az 8 karakter, bir büyük harf, bir küçük harf ve bir rakam içermelidir."
+        />
+      </div>
+
+      <!-- RE-PASSWORD -->
+      <div class="form-group">
+        <label for="re_password_id">Re-Password</label>
+        <input
+          type="password"
+          id="re_password_id"
+          name="re_password_id"
+          placeholder="Şifrenizi Tekrar giriniz..."
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+          title="Yukarıdaki şifre ile aynı olmalıdır."
+        />
+      </div>
+
+      <!-- RE-PASSWORD -->
+      <div class="form-group">
+        <label for="re_password_id">Re-Password</label>
+        <input
+          type="password"
+          id="re_password_id"
+          name="re_password_id"
+          placeholder="Şifrenizi Tekrar giriniz..."
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+          title="Yukarıdaki şifre ile aynı olmalıdır."
+        />
+      </div>
+
+      <!-- TEL NUMBER -->
+      <div class="form-group">
+        <label for="re_password_id">Tel Number</label>
+        <input
+          type="tel"
+          id="tel_id"
+          name="tel_id"
+          placeholder="ex: 0532 111 22 33"
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="^\d{3} \d{3} \d{2} \d{2}$"
+          title="Telefon numaranızı giriniz."
+        />
+      </div>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- end code -->
+  </body>
+</html>
