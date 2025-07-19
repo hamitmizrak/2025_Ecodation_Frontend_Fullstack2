@@ -29,6 +29,7 @@ body {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding: 2rem 2rem 2rem 2rem; /*ÜST-SAĞ-ALT-SOL */
+  padding: 2rem 2rem; /*ÜST-ALT  SAĞ-SOL */
   padding: 2rem;
 }
 
@@ -89,7 +90,75 @@ select {
   border: 1px solid #00c2cb; /* Buz rengi kenarlık */
   border: none; /* Buz rengi kenarlık */
   border-radius: 0.5rem; /* Kenar yuvarlama */
-  background-color: #2a2a2a; /* Koyu gri arka plan */
-  color: #fff; /* Beyaz metin rengi */
+  background-color: #f0faff; /*  buz rengi */
+  color: #1c1c1c; /* Beyaz metin rengi */
   outline: none; /* Odaklandığında kenarlık olmaması için */
+  transition: all 0.3s ease;
+}
+
+/* Dosya Seçim Rengi */
+input[type='file'] {
+  background-color: #640bd8;
+}
+
+/* Textarea büyümesi sadece dikey yönde olsun */
+textarea {
+  resize: vertical;
+}
+
+/* Radio ve checkbox özel */
+input[type='radio'],
+input[type='checkbox'] {
+  margin-right: 0.5rem;
+  transform: scale(1.8);
+}
+
+/* Datalist görünüm düzeltme */
+input[list] {
+  background-color: #f5fff0;
+}
+
+/* Renk kutusu */
+input[type='color'] {
+  padding: 0;
+  height: 30px;
+  width: 100%;
+  width: 200px;
+  border: 1px solid #cccccc;
+}
+
+/* Button */
+button {
+  padding: 0.75rem 1.5rem; /* İç boşluk */
+  font-size: 1rem; /* 1.2rem = 20*1.2=24px */
+  border: none; /* Kenarlık yok */
+  border-radius: 0.5rem; /* Kenar yuvarlama */
+  cursor: pointer;
+  transition: all 0.9s ease;
+  margin-right: 1rem;
+}
+
+#reset_id {
+  color: #ffffff;
+  background-color: red;
+}
+
+/* Buton üzerine geldiğim zaman */
+#reset_id:hover {
+  color: red;
+  background-color: white;
+}
+
+#submit_id {
+  color: #ffffff;
+  background-color: rgb(53, 131, 220);
+}
+
+#submit_id:hover {
+  color: rgb(53, 131, 220);
+  background-color: white;
+}
+
+#terms_label_id label{
+   padding:2rem;
 }
