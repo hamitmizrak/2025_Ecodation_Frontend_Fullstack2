@@ -1,5 +1,4 @@
-
-:root{
+:root {
   --primary-color: #00c2cb;
   --background-color: #1c1c1c;
   --color: #fff;
@@ -16,10 +15,9 @@ html {
   font-size: 20px;
 }
 
-
 body {
   font-family: var(--customise-font-family);
-  background: linear-gradient(to right,#564f4f, #1c1c1c );
+  background: linear-gradient(to right, #564f4f, #1c1c1c);
   color: #ffffff;
   color: #fff;
   color: white;
@@ -31,7 +29,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-size: 1rem; /* 1rem = 20px */
-  
+
   display: flex;
   justify-content: center;
 
@@ -161,4 +159,23 @@ button {
 }
 
 /* Mobil uyumluluk */
+/* form-group button */
+@media screen and (min-width: 480px) { /* 1px <= X<=479px */
+ 
+  .form-group button {
+    width: 100%!important;
+    display: block;
+  }
+}
 
+@media screen and (min-width: 768px) { /* 768px <= X<=1199px */
+  .form-group button {
+      width: 32%;
+  }
+}
+
+@media screen and (min-width: 1200px) { /* X>=1200px */
+  .form-group button {
+     width: 24%;
+  }
+}
