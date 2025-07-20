@@ -2,6 +2,10 @@
   --primary-color: #00c2cb;
   --background-color: #1c1c1c;
   --color: #fff;
+  --danger-color: #e74c3c;
+  --secondary-color: #3498db;
+  --accent-color: #8e44ad;
+  --button-radius: 8px;
   --customise-font-family: 'Segoe UI', sans-serif;
 }
 
@@ -18,40 +22,24 @@ html {
 body {
   font-family: var(--customise-font-family);
   background: linear-gradient(to right, #564f4f, #1c1c1c);
-  color: #ffffff;
-  color: #fff;
-  color: white;
-  color: rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.9);
   color: var(--color);
-
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  font-size: 1rem; /* 1rem = 20px */
-
-  display: flex;
-  justify-content: center;
-
-  /* Nesnenin kendi iç boşluğu*/
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding: 2rem 2rem 2rem 2rem; /*ÜST-SAĞ-ALT-SOL */
-  padding: 2rem 2rem; /*ÜST-ALT  SAĞ-SOL */
   padding: 2rem;
 }
 
 form {
   width: 100%;
-  padding: 0.1rem;
-  /* max-width: 36rem; */
+  max-width: 500px;
+  padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 194, 203, 0.15);
   animation: fadeIn 0.5s ease-in-out;
+  background-color: #2a2a2a;
+  border-radius: 10px;
 }
 
-/* Giriş animasyonu */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -64,15 +52,14 @@ form {
 }
 
 fieldset {
-  background-color: #2a2a2a;
-  border: 2px solid #00c2cb;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 0 20px rgba(0, 194, 203, 0.3);
 }
 
 legend {
-  color: #00c2cb;
+  color: var(--primary-color);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -95,8 +82,8 @@ fieldset p {
 }
 
 input,
-textarea,
-select {
+select,
+textarea {
   padding: 0.6rem;
   border: none;
   border-radius: 6px;
@@ -106,18 +93,14 @@ select {
   transition: 0.3s;
 }
 
-input[type='file'] {
-  background-color: var(--color);
-}
-
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #00c2cb;
+  outline: 2px solid var(--primary-color);
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type='checkbox'],
+input[type='radio'] {
   transform: scale(1.2);
   margin-right: 0.4rem;
 }
@@ -126,68 +109,90 @@ input[type='color'] {
   padding: 0;
   height: 40px;
   width: 100px;
-  border: none;
 }
 
-button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
+/* Buton stilleri */
+.form-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.form-button button {
+  padding: 0.7rem 1rem;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  border-radius: var(--button-radius);
+  font-size: 1rem;
   font-weight: bold;
-  margin-right: 0.5rem;
-  transition: background-color 0.4s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #submit_id {
-  background-color: #00c2cb;
+  background-color: var(--primary-color);
   color: var(--background-color);
 }
-
 #submit_id:hover {
   background-color: #00e6f0;
 }
 
 #reset_id {
-  background-color: #e74c3c;
+  background-color: var(--danger-color);
   color: var(--color);
 }
-
 #reset_id:hover {
   background-color: #ff6f61;
 }
 
-/* Mobil uyumluluk */
-/*Mobil Ekrana uygun */
-/*0px<=SCREEN<=479px */
-@media screen and (min-width: 1px) and (max-width: 479px) {
+#blog_id {
+  background-color: var(--accent-color);
+  color: white;
+}
+#blog_id:hover {
+  background-color: #9b59b6;
+}
+
+#home_id {
+  background-color: var(--secondary-color);
+  color: white;
+}
+#home_id:hover {
+  background-color: #5dade2;
+}
+
+/* 1 Buton: Mobil (0 - 767px) */
+@media screen and (max-width: 767px) {
+  .form-button {
+    flex-direction: row;
+  }
   .form-button button {
-    background-color: #0004f1 !important;
+    width: 100% !important;
+    font-size: 1rem;
   }
 }
 
-/* Küçük Ekrana uygun: Örneğin tablet */
-/*480px<=SCREEN<=767px */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+/* 2 Buton: Tablet (768 - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .form-button button {
-    background-color: #c1fb02 !important;
+    width: 48% !important;
+    font-size: 1rem;
   }
 }
 
-/* Orta Ekrana uygun: Örneğin tablet */
-/*768px<=SCREEN<=1199px */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/* 3 Buton: Küçük ekran (992 - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .form-button button {
-    background-color: #000006 !important;
+    width: 30.66% !important;
+    font-size: 0.9rem;
   }
 }
 
-/* Orta Ekrana uygun: Örneğin tablet */
-/*SCREEN>=1200px */
+/* 4 Buton: Geniş ekran (1200px ve üstü) */
 @media screen and (min-width: 1200px) {
-
-    .form-button button {
-    background-color: #4848e7 !important;
+  .form-button button {
+    width: 22% !important;
+    font-size: 0.68rem;
   }
 }
