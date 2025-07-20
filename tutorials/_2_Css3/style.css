@@ -46,7 +46,7 @@ body {
 form {
   width: 100%;
   padding: 0.1rem;
-  max-width: 36rem;
+  /* max-width: 36rem; */
   box-shadow: 0 8px 32px rgba(0, 194, 203, 0.15);
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -159,23 +159,35 @@ button {
 }
 
 /* Mobil uyumluluk */
-/* form-group button */
-@media screen and (min-width: 480px) { /* 1px <= X<=479px */
- 
-  .form-group button {
-    width: 100%!important;
-    display: block;
+/*Mobil Ekrana uygun */
+/*0px<=SCREEN<=479px */
+@media screen and (min-width: 1px) and (max-width: 479px) {
+  .form-button button {
+    background-color: #0004f1 !important;
   }
 }
 
-@media screen and (min-width: 768px) { /* 768px <= X<=1199px */
-  .form-group button {
-      width: 32%;
+/* Küçük Ekrana uygun: Örneğin tablet */
+/*480px<=SCREEN<=767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .form-button button {
+    background-color: #c1fb02 !important;
   }
 }
 
-@media screen and (min-width: 1200px) { /* X>=1200px */
-  .form-group button {
-     width: 24%;
+/* Orta Ekrana uygun: Örneğin tablet */
+/*768px<=SCREEN<=1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-button button {
+    background-color: #000006 !important;
+  }
+}
+
+/* Orta Ekrana uygun: Örneğin tablet */
+/*SCREEN>=1200px */
+@media screen and (min-width: 1200px) {
+
+    .form-button button {
+    background-color: #4848e7 !important;
   }
 }
